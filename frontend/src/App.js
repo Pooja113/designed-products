@@ -1,10 +1,12 @@
 import './App.css';
-import Header from './Components/Header';
+import FetchData from './Components/FetchData';
+//import Header from './Components/Header';
 
 function App() {
   return (
     <div className="App">
-        <Header />
+        {/* <Header /> */}
+        <FetchData />
     </div>
   );
 }

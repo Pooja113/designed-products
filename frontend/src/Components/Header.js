@@ -3,8 +3,7 @@ import axios from "axios"
 
 const Header = () => {
   let [val,setVal] = useState(0);
-   const [posts, setPosts] = useState([]);
-
+  const [posts, setPosts] = useState([]);
   let valHandler = () =>{
     setVal((previousVal) => previousVal + 1);
   }
@@ -23,10 +22,10 @@ const Header = () => {
     <div>
       {val}
       <button onClick={valHandler}>Click</button>
-      <ul>
+      <ol>
       {posts.map(post=>(
         <li key={post.id}>{post.title}</li>
-        ))}</ul>
+        ))}</ol>
      
     </div>
   )
