@@ -36,6 +36,7 @@ const FetchData = () => {
   return (
     <div>
       {state.post.title}
+      {state.error}
     </div>
   )
 }
